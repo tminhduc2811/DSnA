@@ -1,3 +1,7 @@
+"""
+    * Singly linked list is more suitable when we have limited memory and searching for elements is not our priority
+    * When the limitation of memory is not our issue, and insertion, deletion task doesn't happend frequently
+"""
 class Node():
     def __init__(self, data):
         self.data = data
