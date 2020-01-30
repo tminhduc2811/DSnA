@@ -1,3 +1,10 @@
+"""
+! There are also many applications of a circular linked list like:
+
+* Data that need to be run turn by turn
+* Develop other data structures like Queue.
+"""
+
 class Node():
     def __init__(self, data):
         self.data = data
