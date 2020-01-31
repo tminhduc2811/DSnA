@@ -71,7 +71,7 @@ if __name__=='__main__':
     insert_at_last(l, z)
 
     print('After inserting: ', traversal(l))
-    delete(l, l.last);
-    delete(l, b);
+    delete(l, l.last)
+    delete(l, b)
 
     print('After deleting: ', traversal(l))
