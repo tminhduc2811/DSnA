@@ -68,18 +68,15 @@ def inorder(n):
 
 if __name__=='__main__':
 
-    """            
-    *               D
-    *              / \
-    *             /   \
-    *            /     \
-    *           A       F
-    *          / \     / \
-    *         /   \   /   \
-    *        E     B R     T
-    *       / \     /     / \
-    *      G   Q   V     J   L
-    """
+    #               D
+    #              / \
+    #             /   \
+    #            /     \
+    #           A       F
+    #          / \     / \
+    #         /   \   /   \
+    #        E     B R     T
+    #       / \     /     / \
 
     d = TreeNode('D')
     a = TreeNode('A')
