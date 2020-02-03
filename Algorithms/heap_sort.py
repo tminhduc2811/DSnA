@@ -1,3 +1,7 @@
+"""
+! Heap sort takes O(n) for building a heap, and O(nlg(n)) for sorting
+"""
+
 heap_size = 10
 def get_right_child_index(A, index):
     index += 1
@@ -57,12 +61,12 @@ def build_min_heap(A):
     for i in range(heap_size//2, -1, -1):
         min_heapify(A, i)
 
-def max_heap_sort(A):
+def max_heap_sort(A): #O(nlg(n))
     global heap_size
-    while(heap_size > 0):
+    while(heap_size > 0): # O(n)
         A[0], A[heap_size - 1] = A[heap_size - 1], A[0]
         heap_size -= 1
-        max_heapify(A, 0)
+        max_heapify(A, 0) # O(logn)
 
 def min_heap_sort(A):
     global heap_size
