@@ -69,12 +69,12 @@ class RedBlackBSTree:
                     # So we need to check it again
                     z = z.parent.parent 
                 else: # Case 2 or case 3, uncle of z is black
-                    # Case 2: z is the right child
+                    # Case 2: z is the right child (Triangle)
                     if z == z.parent.right:
                         z = z.parent
                         # Turn case 2 to case 3
                         self.left_rotate(z)
-                    # Case 3:
+                    # Case 3: (Line)
                     z.parent.color = black
                     z.parent.parent.color = red
                     self.right_rotate(z.parent.parent)
