@@ -36,6 +36,7 @@ def optimized_bubble_sort(arr):
         for j in range(len(arr) - i - 1):
             if arr[j] > arr[j + 1]:
                 swap(arr, j, j + 1)
+                swapped = True
         if not swapped: # It means that the array is all sorted
             break
     return arr
