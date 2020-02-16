@@ -10,8 +10,8 @@ def merge(arr, start, middle, end):
     right_array = arr[middle + 1:end + 1]
 
     # Inititialize variables
-    i = 0
-    j = 0
+    i = start
+    j = middle + 1
     k = start
 
     while (i < left_size) and (j < right_size):
